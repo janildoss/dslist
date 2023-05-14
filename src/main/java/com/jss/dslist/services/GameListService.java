@@ -20,9 +20,7 @@ public class GameListService {
   public List<GameListDTO> findAll(){
 	List<GameList> result = gameListRepository.findAll(); 
 	
-	return  result.stream().map(x -> new GameListDTO(x)).toList();
-	
-	//return dto;
+	return  result.stream().map(x -> new GameListDTO(x)).toList();	
 	  
   }
 }
